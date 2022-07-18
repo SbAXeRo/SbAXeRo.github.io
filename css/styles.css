@@ -76,6 +76,17 @@
   }
 }
 
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -626,6 +637,10 @@ progress {
   color: #6c757d;
 }
 
+.intro {
+  position: relative;
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -638,6 +653,29 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+.bg-faded {
+  background-color: #f6e1c5;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
 }
 
 @media (min-width: 576px) {
