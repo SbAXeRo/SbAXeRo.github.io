@@ -7265,8 +7265,8 @@ textarea.form-control-lg {
 }
 
 .my-0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .my-1 {
@@ -7377,6 +7377,11 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+
+.mb-100 {
+  margin-bottom: -20px;
+  text-align: center;
 }
 
 .mb-auto {
@@ -11424,7 +11429,7 @@ html {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/TheFinalSymphonyV1I9.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%, 100%;
 }
 .callout h2, .callout .h2 {
   font-size: 3.5rem;
