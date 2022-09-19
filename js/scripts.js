@@ -1,3 +1,4 @@
+
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.5 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2022 Start Bootstrap
@@ -68,7 +69,7 @@ function fadeOut(el) {
 };
 
 function fadeIn(el, display) {
-    el.style.opacity = 0;
+    el.style.opacity = 0.2;
     el.style.display = display || "block";
     (function fade() {
         var val = parseFloat(el.style.opacity);
