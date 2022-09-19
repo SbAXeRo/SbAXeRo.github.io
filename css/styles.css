@@ -11595,7 +11595,7 @@ footer.footer .social-link:hover {
 }
 .newmodalContent {
   min-height: 100vh;
-  transform: scale(1.5);
+  transform: scale(0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
