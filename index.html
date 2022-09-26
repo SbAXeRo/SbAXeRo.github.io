@@ -206,6 +206,7 @@
         </footer>
         
         <div class="newmodal">
+            <span class="newClose"><i class="fas fa-times"></i></span>
             <div class="newmodalContent">
                 <img src="" class="newmodalImg" />
             <span class="newmodalTxt"></span>
@@ -231,7 +232,7 @@
         const modal = document.querySelector(".newmodal");
         const modalImg = document.querySelector(".newmodalImg");
         const modalTxt = document.querySelector(".newmodalTxt");
-        const close = document.querySelector(".newclose");
+        const close = document.querySelector(".newClose");
         
         console.log(captions.length);
         console.log(portfolios.length)
@@ -244,7 +245,7 @@
             modalTxt.innerHTML = portfolio.children[0].children[0].innerHTML;
             modal.classList.add("appear");
 
-            modalImg.addEventListener("click", () => {
+            close.addEventListener("click", () => {
             modal.classList.remove("appear");
                 });
             });
