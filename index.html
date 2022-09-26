@@ -206,6 +206,7 @@
         </footer>
         
         <div class="newmodal">
+            <span class="newClose"><i class="fas fa-times"></i></span>
             <div class="newmodalContent">
                 <img src="" class="newmodalImg" />
             <span class="newmodalTxt"></span>
@@ -215,12 +216,12 @@
 
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        
+
         <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
-        
+
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
@@ -231,20 +232,20 @@
         const modal = document.querySelector(".newmodal");
         const modalImg = document.querySelector(".newmodalImg");
         const modalTxt = document.querySelector(".newmodalTxt");
-        const close = document.querySelector(".newclose");
-        
+        const close = document.querySelector(".newClose");
+
         console.log(captions.length);
         console.log(portfolios.length)
 
         portfolios.forEach((portfolio) => {
             console.log(portfolio.children[1].src)
-            
+
             portfolio.children[0].addEventListener("click", () => {
             modalImg.src = portfolio.children[1].src;
             modalTxt.innerHTML = portfolio.children[0].children[0].innerHTML;
             modal.classList.add("appear");
 
-            modalImg.addEventListener("click", () => {
+            close.addEventListener("click", () => {
             modal.classList.remove("appear");
                 });
             });
