@@ -11306,7 +11306,7 @@ html {
   font-size: 3rem;
 }
 .content-section-heading h3, .content-section-heading .h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -11635,8 +11635,43 @@ footer.footer .social-link:hover {
   }
 }
 
+/* https://stackoverflow.com/questions/38270661/displaying-a-youtube-video-with-iframe-full-width-of-page */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
 
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
+.column {
+  float: left;
+  width: 50%;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-
+.caption-translucent {
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #0F0F0F;
+  width: 25%;
+  background-color: rgba(200, 200, 200, 0.45);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
